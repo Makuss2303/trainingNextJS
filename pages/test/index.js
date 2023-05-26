@@ -40,7 +40,7 @@ export default function Test() {
               checked={checked.includes(course.id)}
               onChange={() => handleCheck(course.id)}
             />
-            {course.name}123
+            {course.name}
           </div>
         ))}
         <button onClick={handleSummit}>Submit</button>

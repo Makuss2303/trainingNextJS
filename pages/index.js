@@ -1,7 +1,7 @@
 import Layout from "@/components/templates/layout";
-import Image from "next/image";
 import HeadSection from "@/components/head";
 import FeatureItem from "@/components/organisms/featureItem";
+import BlogItem from "@/components/organisms/blogItem";
 import "@/pages/index.module.scss";
 
 export default function Home() {
@@ -52,44 +52,16 @@ export default function Home() {
         <div className="container">
           <h1 className="blog__title">BLOG & NEWS</h1>
           <div className="blog__row">
-            <div className="blog__item">
-              <div className="blog__item__wrap">
-                <div className="blog__item__inner">
-                  <figure>
-                    <Image
-                      src="/images/homepage/blog-1.png"
-                      fill="true"
-                      alt="icon"
-                      sizes="(max-width: 170px) 100vw"
-                    />
-                  </figure>
-                  <h2 className="blog__item__title">News title 1</h2>
-                  <p className="blog__item__describe">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do elusmod tempor.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="blog__item">
-              <div className="blog__item__wrap">
-                <div className="blog__item__inner">
-                  <figure>
-                    <Image
-                      src="/images/homepage/blog-2.png"
-                      fill="true"
-                      alt="icon"
-                      sizes="(max-width: 170px) 100vw"
-                    />
-                  </figure>
-                  <h2 className="blog__item__title">News title 2</h2>
-                  <p className="blog__item__describe">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do elusmod tempor.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <BlogItem
+              srcImg="/images/homepage/blog-1.png"
+              title="News title 1"
+              content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor."
+            />
+            <BlogItem
+              srcImg="/images/homepage/blog-2.png"
+              title="News title 2"
+              content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor."
+            />
           </div>
         </div>
       </section>
