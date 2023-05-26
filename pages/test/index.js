@@ -1,5 +1,6 @@
 import Layout from "@/components/templates/layout";
 import { useState } from "react";
+import Link from 'next/link';
 
 export default function Test() {
   const courses = [
@@ -32,7 +33,9 @@ export default function Test() {
   };
   return (
     <Layout>
+      
       <div className="container">
+        <Link href="/test/todo">To do App</Link>
         {courses.map((course) => (
           <div key={course.id}>
             <input
