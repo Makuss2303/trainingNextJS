@@ -7,14 +7,14 @@ export default function FeatureItem(props) {
         <figure>
           <Image
             src={props.srcImg}
+            alt={props.altImg}
             fill
-            alt="icon"
             sizes="(max-width: 50px) 100vw"
           />
         </figure>
         <h2 className="feature__item__title">{props.title}</h2>
         <p className="feature__item__describe">
-            {props.content}
+            {props.describe}
         </p>
         <a href="#">
           <button className="feature__item__button">LEARN MORE</button>

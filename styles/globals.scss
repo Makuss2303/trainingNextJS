@@ -1,6 +1,21 @@
 h1, h2, h3, h4, h5, h6, figure, ul {
     margin: 0;
 }
-
+.btn-custom {
+    display: flex;
+    color: white;
+    font-size: 18px;
+    background-color: #16a085;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    &:hover {
+        color: white;
+        opacity: .8;
+    }
+}
 @import './header.scss';
+@import './pagination.scss';
+@import './error.scss';
 @import './footer.scss';
+@import './loadingScreen.scss';

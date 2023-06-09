@@ -8,19 +8,19 @@ export const menu = [
         link: "/"
     }, 
     {
-        name: "REVIEWS",
-        link: "/"
+        name: "ABOUT",
+        link: "/about"
     },
     {
-        name: "MENU",
-        link: "/"
+        name: "FORM",
+        link: "/form"
     },
     {
-        name: "OFFERS",
-        link: "/"
+        name: "BLOG",
+        link: "/blog"
     },
     {
         name: "TEST",
-        link: "/test"
+        link: "/test/"
     }
 ];

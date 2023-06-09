@@ -4,8 +4,8 @@
     justify-content: center;
     align-items: center;
     min-height: 650px;
-    background: url('/images/homepage/backgr.png') center center;
-    background-size: cover;
+    // background: url('/images/homepage/backgr.png') center center;
+    // background-size: cover;
     text-align: center;
 
     &__title {
@@ -15,8 +15,9 @@
         color: green;
     }
     &__describe {
+        width: 580px;
         font-weight: 600;
-        padding: 0 10vw 35px 10vw;
+        padding: 0 10px 35px 10px;
         color: green;
         p {
             background-color: white;
@@ -49,7 +50,6 @@
             color: #FFFFFF;
             padding: 15px 30px;
             margin-left:5px;
-            background-color: green;
             font-weight: bold;
             border: none;
         }
@@ -57,15 +57,16 @@
             color: black;
         }
     }
-
+    @media screen and (max-width: 650px) {
+        &__describe {
+            width: 350px;
+            padding: 0 10px 15px 10px;
+        }
+    }
     @media screen and (max-width: 475px) {
         --button-width: 170px;
         br {
             display: none;
-        }
-        &__describe {
-
-            padding: 0 10vw 15px 10vw;
         }
         &__button {
             font-size: 14px;
@@ -200,6 +201,9 @@
         
         &__wrap {
             height: 100%;
+            a {
+                text-decoration: none;
+            }
         }
         figure {
             margin-bottom: 15px;
@@ -215,6 +219,7 @@
             font-size: 22px;
             font-weight: bold;
             text-decoration: none;
+            margin-bottom: 10px;
         }
         &__describe {
             color: black;  

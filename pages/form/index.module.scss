@@ -1,0 +1,72 @@
+:root {
+    --contact_form: rgb(177, 221, 240);
+    --contact_form-border: rgb(16, 115, 158);
+    --confirm_form: rgb(255, 242, 204);
+    --confirm_form-border: rgb(225, 202, 132);
+}
+
+/* 
+    CONTACT FORM
+*/
+.contact__form {
+
+    div.word-wrap {
+        padding: 15px 0 15px 0;
+        width: 100%;
+        word-wrap: break-word;
+    }
+
+    font-size: 16px;
+    @media screen and (max-width: 380px) {
+        font-size: 14px;
+    }
+    .row {
+        padding-top: 15px;
+    }
+    .row-custom {
+        display: flex;
+        justify-content: center;
+    }
+    // add * after "required form text"
+    &__required {
+        color: red;
+        font-size: 30px;
+    }
+
+    .col-sm-10 {
+        .error_message {
+            color: #bf1650;
+            
+        }
+    }
+    // .col-sm-2 {
+    //     display: flex;
+    //     align-items: center;
+    // }
+
+    // input
+    input[type="text"], input[type="tel"],
+    input[type="email"], textarea, select {
+        width: 100%;
+        min-height: 48px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: var(--contact_form);
+        border: 2px solid var(--contact_form-border); 
+    }
+    input[type="radio"] {
+        margin-right: 5px;
+    }
+    .gender-element {
+        label {
+            margin-right: 30px;
+        }
+    }
+    select {
+        background-color: white;
+    }
+
+    .btn-custom {
+        border: none; 
+    }
+}

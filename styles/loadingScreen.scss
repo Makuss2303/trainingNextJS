@@ -1,0 +1,72 @@
+
+.spinner-wrapper {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+}
+.spinner {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    animation: itemRotation .5s infinite linear;
+    border: 6px solid rgba(0, 174, 239, .15);
+}
+
+
+.page-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+    z-index: 999;
+}
+.cube {
+    $colors: #8CC271, #69BEEB, #F5AA39, #E9643B;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    @for $i from 1 through length($colors) {
+        &:nth-child(#{$i}) {
+            background-color: nth($colors, $i);
+        }
+    }
+    &:first-child {
+        animation: moveLeft 1s infinite;
+    }
+    &:last-child {
+        animation: moveRight 1s infinite .5s;
+    }
+}
+@keyframes moveLeft {
+    40% {
+        transform: translateX(-60px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+}
+@keyframes moveRight {
+    40% {
+        transform: translateX(60px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+}
+@keyframes itemRotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}

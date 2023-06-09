@@ -1,0 +1,46 @@
+
+.about {
+    padding-top: 50px 0;
+    min-height: 700px;
+    .row {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        figure {
+            position: relative;
+            height: 360px;
+            img {
+                object-fit: contain;
+            }
+        }
+    }
+    &__content {
+        padding-left: 20px;
+    }
+    @media screen and (max-width: 767px) {
+        .row {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .col-sm-6 {
+            width: 100% !important;
+        }
+        &__content {
+            padding-left: 0;
+            &__title {
+                padding-top: 25px;
+            }
+        }
+    }
+    @media screen and (max-width: 576px) {
+        &__content {
+            &__title {
+                padding-top: 15px;
+            }
+        }
+    }
+    @media screen and (max-width: 400px) {
+        &__content {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+#blog {
+    .blog {
+        &__title {
+            padding-top: 35px;
+        }
+        &__row {
+            padding-top: 40px;
+        }
+        &__item {
+            figure {
+                height: 350px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+#single-post {
+    .single__post {
+        &__title {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        figure {
+            margin: 0 0 1em;
+        }
+        figure img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

@@ -1,9 +1,12 @@
 /** @type {import('next').NextConfig} */
 const globImporter = require('node-sass-glob-importer');
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   sassOptions: {
     importer: globImporter(),
+  },
+  images: {
+    domains: ['bt3.test'],
   },
 }
 
