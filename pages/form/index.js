@@ -276,7 +276,7 @@ export default function About() {
                 </div>
               </div>
               <div className="row-custom">
-                <input class="btn-custom" type="submit" />
+                <input className="btn-custom" type="submit" />
               </div>
             </form>
           </div>

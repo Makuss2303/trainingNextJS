@@ -19,9 +19,6 @@ function Pagination(props) {
   }
   return (
     <>
-    {
-      _page > _totalRows && (<h1>ABCCCCCCCCC</h1>)
-    }
       <nav className="pagination_bar">
         <div id="pag-cover">
           {_page > 1 && (
